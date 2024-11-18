@@ -1,0 +1,92 @@
+@font-face {
+    font-display: swap; 
+    font-family: 'Young Serif';
+    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Outfit';
+    src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 400 700;
+}
+
+:root {
+    --ff-primary-young: 'Young Serif', Georgia, 'Times New Roman', Times, serif;
+    --ff-secondary-outfit: 'Outfit', Arial, Helvetica, sans-serif;
+    --fs-1: clamp(2.25rem, 2.1619718309859155rem + 0.3755868544600939vw, 2.5rem);
+    --fs-2: 1.75rem;
+    --fs-3: 1.25rem;
+    --fs-4: 1rem;
+    --color-rose-800: hsl(332, 51%, 32%);
+    --color-rose-50: hsl(330, 100%, 98%);
+    --color-stone-900: hsl(24, 5%, 18%);
+    --color-stone-600: hsl(30, 10%, 34%);
+    --color-stone-150: hsl(30, 18%, 87%);
+    --color-stone-100: hsl(30, 54%, 90%);
+    --color-brown: hsl(14, 45%, 36%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+html {
+	font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+    font-family: var(--ff-secondary-outfit);
+    font-weight: 400;
+    letter-spacing: 0px;
+	line-height: 1.5;
+}
+
+h1, h2 {
+    font-family: var(--ff-primary-young);
+    font-weight: 400;
+	line-height: 1;
+}
+
+h3 {
+    font-family: var(--ff-secondary-outfit);
+    font-weight: 600;
+    line-height: 1;
+}
+
+p, li, figcaption {
+	text-wrap: pretty;
+	max-width: 65ch;
+} 
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+	height: auto;
+}
+
+input, button, textarea, select {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-wrap: balance;
+}
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+}
