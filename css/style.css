@@ -15,7 +15,7 @@
 :root {
     --ff-primary-young: 'Young Serif', Georgia, 'Times New Roman', Times, serif;
     --ff-secondary-outfit: 'Outfit', Arial, Helvetica, sans-serif;
-    --fs-1: clamp(2.25rem, 2.1619718309859155rem + 0.3755868544600939vw, 2.5rem);
+    --fs-1: clamp(2.25rem, 2.1785714285714284rem + 0.35714285714285715vw, 2.5rem);
     --fs-2: 1.75rem;
     --fs-3: 1.25rem;
     --fs-4: 1rem;
@@ -25,7 +25,7 @@
     --color-stone-600: hsl(30, 10%, 34%);
     --color-stone-150: hsl(30, 18%, 87%);
     --color-stone-100: hsl(30, 54%, 90%);
-    --color-brown: hsl(14, 45%, 36%);
+    --color-brown-800: hsl(14, 45%, 36%);
     --color-white: hsl(0, 0%, 100%);
 }
 
@@ -81,12 +81,132 @@ p, h1, h2, h3, h4, h5, h6 {
 	overflow-wrap: break-word;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
 	text-wrap: balance;
-}
+} */
 
 a,
 a:visited,
 a:active {
 	text-decoration: none;
 }
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Mobile style start*/
+.recipe__content {
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.recipe__title {
+    color: var(--color-stone-900);
+    font-size: var(--fs-1);
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+.recipe__description {
+    text-align: left;
+}
+
+p , li {
+    color: var(--color-stone-600);
+}
+
+.recipe__time-section {
+    background-color: var(--color-rose-50);
+    padding: 24px;
+    border-radius: 0.75rem;
+}
+
+.recipe__time-section h3 {
+    color: var(--color-rose-800);
+    margin-bottom: 1rem;
+}
+
+li {
+    padding-left: 16px;
+    margin-left: 1.25rem;
+}
+
+.recipe__time-section li::marker {
+    color: var(--color-rose-800);
+}
+
+.recipe__section h2 {
+    color: var(--color-brown-800);
+    margin-bottom: 1.5rem;
+}
+.recipe__section li::marker {
+    color: var(--color-brown-800);
+}
+.recipe__section ol li::marker {
+    font-weight: 700;
+}
+
+.recipe__divider {
+    color: var(--color-stone-150);
+    opacity: 0.5;
+}
+
+.recipe__nutrition-section p {
+    margin-bottom: 1.5rem;
+}
+
+.recipe__nutrition-section strong {
+    color:var(--color-brown-800);
+}
+
+.recipe__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recipe__table-cell {
+    border-bottom: 1px solid var(--color-stone-150);
+}
+
+.recipe__table-cell {
+    padding: 12px 0px 12px 32px
+}
+
+.recipe__table strong{
+    padding-right: 32px;
+    display: block;
+    margin-left: 1rem;
+}
+
+.recipe__table-cell-cal {
+    padding-top: 0;
+}
+
+.recipe__table-cell-value {
+    padding-left: 0;
+}
+
+.recipe__table-cell-cal-value {
+    padding-top: 0;
+}
+
+.recipe__table-cell-fat {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.recipe__table-cell-fat-value {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* Tablet layout */
+
+
+
