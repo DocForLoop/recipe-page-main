@@ -56,10 +56,11 @@ h1, h2 {
 	line-height: 1;
 }
 
-h3 {
+.recipe__prep-title {
     font-family: var(--ff-secondary-outfit);
     font-weight: 600;
     line-height: 1;
+    font-size: var(--fs-3);
 }
 
 p, li, figcaption {
@@ -131,7 +132,7 @@ p , li {
     border-radius: 0.75rem;
 }
 
-.recipe__time-section h3 {
+.recipe__prep-title {
     color: var(--color-rose-800);
     margin-bottom: 1rem;
 }
