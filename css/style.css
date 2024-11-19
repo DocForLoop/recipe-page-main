@@ -99,7 +99,11 @@ ul, ol {
     gap: 1rem;
 }
 
-/* Mobile style start*/
+/* Mobile layout*/
+.recipe {
+    min-height: 100vh;
+}
+
 .recipe__content {
     padding: 40px 32px;
     display: flex;
@@ -207,6 +211,36 @@ li {
 }
 
 /* Tablet layout */
+@media (width >= 47.938em) {
+    main {
+        display: flex;
+        justify-content: center;
+        background-color: var(--color-stone-100);
+        padding: 128px 48px;
+    }
 
+    .recipe {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        background-color: var(--color-white);
+        max-width: 38.5rem;
+        padding: 40px;
+        border-radius: 1.5rem;
+    }
 
+    .recipe__banner {
+        border-radius: 0.75rem;
+    }
+    
+    .recipe__content {
+        padding: 0;
+    }
+}
 
+/* Desktop layout */
+@media (width >= 75em) {
+    .recipe {
+        max-width: 46rem;
+    }
+}
