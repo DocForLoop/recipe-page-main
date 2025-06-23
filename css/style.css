@@ -44,6 +44,7 @@ html {
 }
 
 body {
+    position: relative;
     font-family: var(--ff-secondary-outfit);
     font-weight: 400;
     letter-spacing: 0px;
@@ -244,4 +245,30 @@ li {
     .recipe {
         max-width: 46rem;
     }
+}
+
+.attribution {
+    position: absolute;
+    inset-block-end: 5px;
+    inset-inline: 0;
+    font-size: 12px;
+    text-align: center;
+    color: var(--color-stone-900);
+}
+
+.attribution__link {
+    color: var(--color-stone-900);
+	border-radius: 3px;
+    text-decoration: underline;
+    transition: color 0.3s;
+
+}
+.attribution__link:hover {
+	color: var(--color-rose-800);
+}
+
+.attribution__link:focus-visible {
+	color: var(--color-rose-800);
+	outline: 3px solid var(--color-rose-800);
+	outline-offset: 2px;
 }
